@@ -1,0 +1,178 @@
+/* ----------------------------------------------------------------------------------------- 
+____________________________________________________________________
+
+Author - Mustafa Quilon / http://mustafaquilon.com
+Visual design copyright 2010. All Rights Reserved.
+
+"Screen" Style Sheet for "Resume/CV Perfecto"
+Themeforest url - http://themeforest.net/user/mustafaquilon?ref=mustafaquilon
+Demo URL - http://mustafaquilon.com/files/tf/resume-cv-perfecto/
+Support - howdy@mustafaquilon.com
+____________________________________________________________________
+
+----------------------------------------------------------------------------------------- */
+
+/* =reset (dont change this unless you know what you're doing)
+----------------------------------------------------------------------------------------- */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin : 0; padding : 0; border : 0; outline : 0; font-size : 100%; vertical-align : baseline; background : transparent;
+}
+ol, ul { list-style: none; list-style-image: none; list-style-position: outside; list-style-type: none; }
+ins { text-decoration: none; }
+del { text-decoration: line-through; }
+/* tables still need 'cellspacing="0"' in the markup ^_^_^_^_^ */
+table { border-collapse: collapse; border-spacing: 0; }
+caption, th, td { text-align: left; font-weight: normal; }
+table, td, th { vertical-align: middle; }
+blockquote:before, blockquote:after, q:before, q:after { content: ""; content: none;}
+blockquote, q { quotes: "" ""; }
+a img { border: none; }
+abbr, acronym { border-bottom-width : 0; }
+strong { font-weight : bold; }
+em { font-style : italic; }
+
+/* =common
+----------------------------------------------------------------------------------------- */
+body { background: url(../images/layout/bg.png) 0 0 repeat-x #f8f8f8; font: 12px/20px Helvetica, Arial, sans-serif; color: #555; text-shadow: 1px 1px 0 #fff; }
+
+/* default link color */
+a { color: #222; text-decoration: underline; }
+a:hover, a:focus { color: #f8f8f8; background-color: #555; text-shadow: 1px 1px 0 #222; text-decoration: none; }
+
+p { margin: 0 0 16px; }
+
+/* heading styles */
+h2 { position: relative; width: 578px; margin: 0 0 16px -20px; padding: 2px 10px; background-color: #555; border: 1px solid #444; border-top-color: #111; border-left-color: #111; color: #f8f8f8; font: normal 18px/24px Helvetica, Arial, sans-serif; text-shadow: none; text-transform: uppercase; } 
+h3 { position: relative; width: 568px; margin: 0 0 16px -10px; padding: 4px 10px; background-color: #ebebeb; border: 1px solid #ddd; border-top-color: #bcbcbc; border-left-color: #bcbcbc; color: #666; font: bold 14px/20px Helvetica, Arial, sans-serif;  text-transform: uppercase; }
+h4 { position: relative; width: 578px; margin: 0 0 14px 0; padding: 4px 0; border-bottom: 1px solid #ddd; font: bold 14px/20px Helvetica, Arial, sans-serif; } 
+h5 { position: relative; width: 578px; margin: 0 0 12px 0; padding: 4px 0; font: bold 14px/18px Helvetica, Arial, sans-serif; font-variant: small-caps; } 
+
+.floatRight { float: right;	}
+
+/* list styles */
+#content ul, #content ol { margin: 0 0 16px; padding: 0 0 0 24px; }
+.disc li { list-style-type: disc; }
+.square li { list-style-type: square; }
+.circle li { list-style-type: circle; }
+.lowerAlphabet li { list-style-type: lower-alpha; }
+.upperAlphabet li { list-style-type: upper-alpha; }
+.decimal li { list-style-type: decimal; }
+
+/* table styles */
+table, table.default { margin: 0 0 16px; border-collapse: collapse; border: 1px solid #ccc; }
+table.default td, table.default th { padding: 4px 8px; border: 1px solid #ddd; }
+table.default th { background-color: #eee; font-weight: bold; }
+
+abbr { border-bottom: thin dotted; }
+abbr:hover, abbr:focus, abbr.noVisual { border-bottom: 0 none; }
+acronym { border-bottom: thin dotted; }
+acronym:hover, acronym:focus, acronym.noVisual { border-bottom: 0 none; }
+
+/* give anyone of this class to an image to float it left or right */
+.left { float: left; margin: 5px 16px 5px 0; }
+.right { float: right; margin: 5px 0 5px 16px; }
+
+.clear { clear: both; }
+
+/* =headerSection
+----------------------------------------------------------------------------------------- */
+#headerWrapper { position: relative; z-index: 100; overflow: hidden; clear: both; width: 100%; margin: 5px 0 0; background: url(../images/layout/header-bg.png) repeat-x bottom left #ebebeb; }
+#header { overflow: hidden; width: 960px; margin: 0 auto; padding: 23px 0 5px; text-shadow: 1px 1px 0 #f8f8f8; }
+
+#label { overflow: hidden; float: left; width: 342px; margin: 0 20px 0 0; }
+h1#title { width: 100%; margin: 0 0 12px; padding: 0 0 8px; background: url(../images/layout/h1-bg.png) repeat-x bottom left; font: 20px/30px Helvetica, Arial, sans-serif; color: #333; text-transform: uppercase; text-align: right; }
+
+#label .address { overflow: hidden; text-align: right; }
+#label a { text-decoration: none; }
+#label a:hover, #label a:focus { background: transparent; color: #555; text-decoration: underline; text-shadow: 1px 1px 0 #fff; }
+
+#intro { overflow: hidden; float: left; width: 598px; }
+#intro p { font-size: 14px; line-height: 27px; margin: 0 0 20px 20px; }
+
+#headerShadow { position: relative; z-index: 100; overflow: hidden; clear: both; height: 25px; width: 100%; background: url(../images/layout/reveal.png) repeat-x bottom left transparent; }
+
+/* =sidebar
+----------------------------------------------------------------------------------------- */
+#sidebar { z-index: 10; height: auto; width: 342px; position: fixed; top: auto; }
+
+#avatar { z-index: 0; height: 125px; width: 342px; position: absolute; top: -170px; margin: 0 0 45px; }
+#avatar a { display: block; float: right; z-index: 0; }
+#avatar a:hover, #avatar a:focus { background: transparent; }
+#avatar a img { border: 1px solid #ccc; padding: 5px; margin: 0 0 20px; background-color: #ebebeb; }
+
+/* =networkLinks */
+#networkLinks { clear: both; margin: 45px 0 20px; text-align: right; }
+#networkLinks li { display: inline; }
+#networkLinks a { display: inline-block; padding: 2px 4px 0; opacity: 0.6; -moz-opacity:0.60; }
+#networkLinks a:hover, #networkLinks a:focus { background: transparent; opacity: 1; -moz-opacity:1; }
+
+#networkLinks li.divider a { border-right: 1px solid #ccc; padding-right: 10px; margin-right: 5px; }
+
+
+/* =navMain
+----------------------------------------------------------------------------------------- */
+#navMain { position: relative; z-index: 1000; overflow: hidden; width: 100%; padding: 1px 0 0 0; }
+#navMain li { display: block; text-align: right; margin: 0 0 7px; }
+#navMain a { padding: 2px 8px; background-color: #555; color: #f8f8f8; text-shadow: none; text-transform: uppercase; border: 1px solid #444; border-top-color: #111; border-left-color: #111; text-decoration: none; }
+
+#navMain a:hover, #navMain a:focus, #navMain a.selected { background-color: #ebebeb; border-color: #ddd; border-top-color: #bcbcbc; border-left-color: #bcbcbc; color: #555; }
+
+
+/* =content
+----------------------------------------------------------------------------------------- */
+#contentWrapper { overflow: hidden; position: relative; width: 960px; margin: -5px auto 0;  }
+
+#content { position: relative; float: right; width: 578px; margin: 0 0 20px; top: 0; }
+
+/* Gallery Styles */
+#content ul.gallery { clear: both; overflow: hidden; margin: 5px 0 0; padding: 0; }
+#content ul.gallery li { float: left; display: inline; width: 70px; height: 65px; padding: 0 13px 20px 12px; }
+#content ul.gallery li a { float: left; display: block; width: 70px; height: 65px; filter:alpha(opacity=75); -moz-opacity:0.75; opacity:0.75; }
+#content ul.gallery li a:hover, #content ul.gallery li a:focus { filter:alpha(opacity=100); -moz-opacity:1; opacity:1; }
+
+/* =footer/copyright
+----------------------------------------------------------------------------------------- */
+#footer { width: 100%; background-color: #555; padding: 6px 0; }
+#footer a { color: #eee; text-decoration: none; text-shadow: 1px 1px 0 #444; }
+#footer a:hover, #footer a:focus { background: transparent; text-decoration: underline; }
+#copyright { width: 960px; margin: 0 auto; color: #ccc; text-shadow: 1px 1px 0 #444; }
+#copyright p { margin: 0; padding: 0; }
+
+/* =form
+----------------------------------------------------------------------------------------- */
+form { padding: 0; margin: 0; }
+fieldset { clear: both; }
+
+form .field, form .buttons { padding-bottom: 10px; }
+form .field { padding-left: 140px; }
+form .field label { display: inline; float: left; width: 120px; margin-left: -140px; }
+
+input.text, textarea { width: 200px; border: 1px solid #ddd; border-top-color: #bcbcbc; border-left-color: #bcbcbc; -moz-border-radius: 2px; border-radius: 2px; font-size: 12px; color: #555; }
+input.text:focus, input.password:focus, textarea:focus, select:focus { background-color: #eee; }
+
+label, button, input.submit { cursor: pointer; }
+input.submit { margin-left: 140px; background-color: #555; color: #f8f8f8; text-shadow: none; border: 1px solid #444; border-top-color: #111; border-left-color: #111; }
+input.reset { margin-left: 10px; }
+input.submit:hover, input.submit:focus { background-color: #ebebeb; border-color: #ddd; border-top-color: #bcbcbc; border-left-color: #bcbcbc; color: #555; }
+
+#note { margin: 0 0 12px; font-weight: bold; color: #333; }
+.notification_error { padding: 5px; border: 1px solid #ccc; }
+
+/* =clearfix (Alsett)
+----------------------------------------------------------------------------------------- */
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.clearfix {display: inline-block;}
+/* backslash hack hides from IE Mac \*/
+	* html .clearfix {height: 1%;}
+	.clearfix {display: block;}
+/* end backslash hack */
+
+/* =accessibilityEnhancements
+----------------------------------------------------------------------------------------- */
+hr { display: none; visibility: hidden; }
+/*visualHide*/
+.visuallyHidden { position: absolute; top: -500px; left: 0px; width: 1px; height: 1px; overflow: hidden; }
+
+/* =webkit / mozilla
+----------------------------------------------------------------------------------------- */
+::selection { color: #fff; background-color: #555; text-shadow: none; } /* webkit */
+::-moz-selection { color: #fff; background-color: #555; text-shadow: none; } /* mozilla */
